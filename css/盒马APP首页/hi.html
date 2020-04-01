@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>盒马</title>
+	<style type="text/css">
+
+	body{
+		background-color:#ededed;
+		width: 402px;
+		margin: 0;
+		padding: 0;
+
+	}
+		.head{
+		
+			height: 77px;
+			width: 402px;
+			background-color: #1cc4ff;
+		}
+		.first{
+			text-align: center;
+			width: 402px;
+		}
+		.one {
+			float: left;
+			display: inline-block;
+			position: relative;
+			left: 20px;
+			top: -5px;
+		}
+		.apple{
+			float: left;
+			display: inline-block;
+			position: relative;
+			top: 3px;
+			left: 7px;
+		}
+		.GX{
+			display: inline-block;
+			position: relative;
+			top: 2px;
+			left: 30px;
+		}
+		.SD{
+			float: right;
+			display: inline-block;
+			
+		}
+		.two{
+			background-color: white;
+			height: 25px;
+			width: 200px;
+			position: absolute;
+			top: 46px;
+			left:85px;
+		}
+		.three{
+			position: relative;
+			top: -20px;
+			left: 130px;
+		}
+		table tr td img,img{
+			border-radius: 50%;
+		}
+		.big{
+			font-size: 20px;
+			font-family: 黑体;
+		}
+		.small{
+			font-size: 10px;
+			font-family: 黑体;
+		}
+		
+		.red{
+			background-color: #fceced;
+			border:1px red solid;
+			float: left;
+		}
+		.white{
+			background-color: red;
+			border:1px red solid;
+			float: left;
+		}
+		.black{
+			font-family: 黑体;
+			width: 402px;
+
+		}
+		.grey{
+			border:1px grey solid;
+			position: relative;
+			top:1.5px;
+			left: 0px;
+			
+		}
+		.hang{
+			display: block;
+			position: relative;
+			top: 8px;
+			left: -75px;
+			
+		}
+		.money{
+			height: 10px;
+			position: relative;
+			top: -13px;
+			left: -73px;
+		}
+		.shop1{
+			display: inline-block;
+			position: relative;
+			top: 25px;
+			left: 145px;
+		}
+		.shop{
+			display: inline-block;
+			position: relative;
+			top: 3px;
+			left: 150px;
+		}
+		.buy{
+			position: relative;
+			top: -5px;
+			left: 0px;
+		}
+		.log{
+			position:fixed;
+ 			top: 89%;
+ 			left:0px;
+			background: rgba(0, 0, 0, 0.5);
+			width: 402px;
+			height: 28px;
+		}
+		.log1{
+			line-height: 28px;
+			float: left;
+			display: inline-block;
+		}
+		.log2{
+			height: 15px;
+			width: 70px;
+			background-color: #09aefd;
+			float:right;
+			font-size: 13px;
+			margin-right: 8px;
+			margin-top:3px;
+			border-radius: 15%;
+			line-height: 16px;
+			text-align: center;
+		}
+		.con{
+ 			width: 402px;
+ 			position:fixed;
+ 			top: 93%;
+ 			left:0px;
+			background-color: white;
+			font-size: 12px;
+		}
+		.top{
+			position: relative;
+			top: -20px;
+			left: 0px;
+		}
+	  a:link{text-decoration:none; color: black;}
+      a:visited{color: #10aaff;}
+      a:hover{color: #10aaff;}
+      a:active{color: #10aaff;}
+	</style>
+</head>
+<body>
+	<header class="head">
+		<form>
+			<img src="1.png"/>
+			<section class="first">
+				<artical class="one">
+					<a href="#">
+						<img src="2.png" height="35px" />
+					</a>
+				</artical>
+				<fieldset style="border:none">
+				<artical class="two">
+					<img src="2+.png" height="20px" width="20px" style="vertical-align:bottom"/>
+					<label for=someld>
+					<input type="text" name="search" placeholder="电子卡" id="search" style="border-style:none"/ >
+					</label>
+				</artical>
+				</fieldset>
+				<artical class="three">
+					<a href="#">
+						<img src="3.png"/>
+					</a>
+				</artical>
+			</section>
+		</form>
+	</header>
+
+	<nav>
+		<table width="402px">
+			<tr align="center">
+				<td><a href="#"><img src="4.png" width="70px"></a></td>
+				<td><a href="#"><img src="5.png" width="70px"></a></td>
+				<td><a href="#"><img src="6.png" width="70px"></a></td>
+				<td><a href="#"><img src="7.png" width="70px"></a></td>
+				<td><a href="#"><img src="8.png" width="70px"></a></td>
+			</tr>
+			<tr align="center">
+				<td><a href="#">水果蔬菜</a></td>
+				<td><a href="#">肉禽蛋品</a></td>
+				<td><a href="#">海鲜水产</a></td>
+				<td><a href="#">速食冷冻</a></td>
+				<td><a href="#">粮油食品</a></td>
+			</tr>
+		</table>
+	</nav>
+	
+	<section>
+		<table width="100%">
+		<tr>
+			<td bgcolor="white" align="center">
+			<a href="#">
+				<table width="50%">
+					<tr>
+						<td colspan="2" class="big">吃好点</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="small"><font color="#979797">宅在家 也要吃好点</font></td>
+					</tr>
+					<tr align="center">
+						<td><img src="9.png" width="80px"></td>
+						<td><img src="10.png" width="80px"></td>
+					</tr>
+				</table>
+				</a>
+			</td>
+
+			<td bgcolor="white" align="center">
+			<a href="#">
+				<table width="50%">
+					<tr>
+						<td colspan="2" class="big">产地量贩</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="small"><font color="#979797">基地水果 全国发售</font></td>
+					</tr>
+					<tr align="center">
+						<td><img src="11.png" width="80px"></td>
+						<td><img src="12.png" width="80px"></td>
+					</tr>
+				</table>
+				</a>
+			</td>
+		</tr>
+		</table>
+	</section>
+	
+	<nav>
+	<table width="100%">
+		<tr align="center">
+			<td>
+				<a href="#">
+					<arctial class="big">
+						全部
+					</arctial>
+					<br/>
+					<arctial><font size="1px">
+						换行标签
+					</font></arctial>
+				</a>
+			</td>
+			<td>
+				<a href="#">
+					<arctial class="big">
+						时令
+					</arctial>
+					<br/>
+					<arctial><font size="1px">
+						当季优选
+					</font></arctial>
+				</a>
+			</td>
+			<td>
+				<a href="#">
+					<arctial class="big">
+						进口
+					</arctial>
+					<br/>
+					<arctial><font size="1px">
+						国际直采
+					</font></arctial>
+				</a>
+			</td>
+			<td>
+				<a href="#">
+					<arctial class="big">
+						人气
+					</arctial>
+					<br/>
+					<arctial><font size="1px">
+						大家在买
+					</font></arctial>
+				</a>
+			</td>
+		</tr>
+	</table>
+	</nav>
+
+	<article>
+	<table class="black" cellspacing="5px">
+		<tr bgcolor="white" >
+			<td height="90px">
+			<section class="apple">
+				<a href="#"><img src="13.png" width="80px" ></a>
+			</section>
+			<section class="SD">
+			<a href="#">
+				<selection style="margin:8px 0 0 0;">
+					山东烟台红富士苹果 2.5kg(果径80...)
+					<br/>
+					山东烟台... 2.... 80(含)—85mm...
+					<br/>
+				</selection>
+			</a>
+				
+				<selection class="left" style="margin:8px 0 0px 0;">
+					<arctial class="white"><font size="1.8px"><font color="white">返</font></font></arctial>
+					<arctial class="red"><font size="1.8px"><font color="red"> 最高￥3.99元 </font></font></arctial>&nbsp;<arctial class="grey"><font size="1.8px"><font color="grey"> 商家24H发货 </font></font></arctial>
+				</selection>
+				<br/>
+				<section class="money">
+				<font color="red"><font size="4px"><strong>￥39.9</strong></font></font><font size="1.7px"><font color="grey">/箱</font></font>
+				<a href="#"><img src="19.png" width="40px" class="shop1"/></a>
+				</section>
+				<br/>
+				<section class="buy">
+					<font size="2px"><font color="grey">1800+人已买过</font></font>
+				</section>
+				</section>
+			</td>
+		</tr>
+
+		<tr bgcolor="white" >
+			<td height="80px">
+			<section class="apple">
+				<a href="#"><img src="11.png" width="80px" ></a>
+			</section>
+			<section class="GX">
+			<a href="#">
+				<selection>
+					广西荔浦芋头 2.5kg
+					<br/>
+					芋艿
+					<br/>
+				</selection>
+			</a>
+					
+				<selection class="left">
+					<arctial class="white"><font size="1.8px"><font color="white">返</font></font></arctial>
+					<arctial class="red"><font size="1.8px"><font color="red"> 最高￥2.99元 </font></font></arctial>&nbsp;<arctial class="grey"><font size="1.8px"><font color="grey"> 商家24H发货 </font></font></arctial>
+				</selection>
+				<br/>
+				<section class="money">
+				<font color="red"><font size="4px"><strong>￥29.9</strong></font></font><font size="1.7px"><font color="grey">/箱</font></font>
+				<a href="#"><img src="19.png" width="40px" class="shop"/></a>
+				</section>
+				</section>
+			</td>
+		</tr>
+
+		<tr bgcolor="white" >
+			<td height="100px">
+			<section class="apple">
+				<a href="#"><img src="12.png" width="80px" ></a>
+			</section>
+			<section class="GX">
+			<a href="#">
+				<selection>
+					四川浦江不知火丑橘 2.5kg（单果1...）
+					<br/>
+					不知火柑（丑柑）
+					<br/>
+				</selection>
+			</a>
+				
+				<selection class="left" style="margin:8px 0 0px 0;">
+					<arctial class="white"><font size="1.8px"><font color="white">返</font></font></arctial>
+					<arctial class="red"><font size="1.8px"><font color="red">最高￥3.99元</font></font></arctial>&nbsp;<arctial class="grey"><font size="1.8px"><font color="grey"> 商家24H发货 </font></font></arctial>
+				</selection>
+				<br/>
+				<section class="money">
+				<font color="red"><font size="4px"><strong>￥39.9</strong></font></font><font size="1.7px"><font color="grey">/箱</font></font>
+				<a href="#"><img src="19.png" width="40px" class="shop"/></a>
+				</section>
+				<br/>
+				
+				</section>
+			</td>
+		</tr>
+	</table>
+	</article>
+
+
+	<footer class="log">
+ 		<section class="log1"><font color="white">登录盒马APP,开启鲜美生活</font></section>
+ 		<section class="log2"><font color="white"> 立即登录</font></section>
+	</footer>
+
+	<footer  class="con">
+	<table width="100%"  cellspacing="2px">
+		<tr align="center">
+			<td rowspan="2" height="4px"><a href="#"><img src="14.png" width="40px"></a></td>
+			<td><a href="#"><img src="15.png" width="40px"></a></td>
+			<td><a href="#"><img src="16.png" width="30px"></a></td>
+			<td><a href="#"><img src="17.png" width="40px"></a></td>
+			<td><a href="#"><img src="18.png" width="30px"></a></td>
+		</tr>
+		<tr align="center">
+			<td><a href="#">分类</a></td>
+			<td><a href="#">盒区生活</a></td>
+			<td><a href="#">购物车</a></td>
+			<td><a href="#">我的</a></td>
+		</tr>
+	</table>
+	</footer>
+
+
+</body>
+</html>

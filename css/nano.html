@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>DOM</title>
+	<title>图片轮播</title>
 	<meta charset="utf-8">
-	<style type="text/css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
 		
-	</style>
+		</style>
 </head>
 <body>
-	<p id="text" align="center" data-type="title" class="abc">文本</p> 
-	<script type="text/javascript">
-		var p=document.getElementById("text");
-		p.setAttribute("data-color","red");
-	</script>
+		<div class="main" id="main">
+			<div class="banner" id="banner">
+				<a href="#">
+					<div class="banner-slide slide1 slide-active"></div>
+				</a>
+				<a href="#">
+					<div class="banner-slide slide2"></div>
+				</a>
+				<a href="#">
+					<div class="banner-slide slide3"></div>
+				</a>
+			</div>
+		</div>
+		<script src="script.js"></script>
 </body>
 </html>

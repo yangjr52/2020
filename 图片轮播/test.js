@@ -8,6 +8,8 @@ var index=0,
 	timer=null,
 	pics=byId("banner").getElementsByTagName("div"),
 	dots=byId("dots").getElementsByTagName("span"),
+	prev=byId("prev"),
+	next=byId("next"),
 	len=pics.length;
 
 function slideImg(){
@@ -15,7 +17,8 @@ function slideImg(){
 	//滑过清除定时器，离开继续
 	main.onmouseover = function(){
 		//滑过清除定时器
-		if(timer) clearInterval(timer);
+		if(timer) 
+			clearInterval(timer);
 
 	}
 	main.onmouseout=function(){
@@ -39,8 +42,10 @@ function slideImg(){
 		dots[d].id=d;
 		dots[d].onclick=function(){
 			//改变index为当前span的id值
-			alert(this.id);//this指的是绑定在哪个事件，在此处为spand
-
+			index=this.id;//this指的是绑定在哪个事件，在此处为spand
+			this.className="active";
+			//调用changImg实现切换图片
+			changeImg(index);
 		}
 		/*	
 			无法使用：function会改变作用域，打印出来是3
@@ -49,6 +54,26 @@ function slideImg(){
 			index=d;
 		}*/
 	}
+
+	//上一张下一张绑定事件
+	next.onclick=function(){
+		index++;
+		if(index>=len)
+		{
+			index=0;
+		}
+		changeImg(index);
+	}
+
+	prev.onclick=function(){
+		index--;
+		if(index<0)
+		{
+			index=2;
+		}
+		changeImg(index);
+	}
+
 }
 //切换图片
 function changeImg(){
@@ -56,10 +81,14 @@ function changeImg(){
 	//pics[index].className=''
 	//遍历banner下所有div将其隐藏
 	for(var i=0;i<len;i++){
+		//遍历banner下所有div和span，将div隐藏，将span清除类
 		pics[i].style.display='none';
+		dots[i].className="";
 	}
 	//根据索引
 	pics[index].style.display='block';
+	dots[index].className="active";
+
 }
 
 slideImg();

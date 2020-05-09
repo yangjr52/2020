@@ -1,0 +1,43 @@
+*{
+	margin: 10px;
+}
+
+.button{
+    background-color: #4472c7; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 10%;
+    position: relative;
+    left: 490px;
+}
+
+div{
+	height: 300px;
+	width: 600px;
+	background-color: #4472c7;
+}
+
+table{
+	position: absolute;
+	top: 120px;
+}
+
+ol{
+	list-style-type: none;
+	position: absolute;
+	top: 116px;
+	left: 420px;
+}
+
+button{
+	border:none;
+	padding: 16px 30px;
+	background-color: white;
+}
+
+.one{
+	width: 400px;
+	height: 50px;
+}

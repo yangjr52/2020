@@ -10,13 +10,29 @@ window.onload=function(){
 		thi=document.getElementById("thi");
 		DeFir=document.getElementById("DeFir"),
 		DeSec=document.getElementById("DeSec"),
-		DEThi=document.getElementById("DEThi");
+		DEThi=document.getElementById("DEThi"),
+		input=document.getElementById("input");
 
-	btn.onclick=function(){
-		var firVal=fir.value,
-			secVal=sec.value,
-			thiVal=thi.value;
-	}
+		
+			btn.onclick=function(){
+				fir.value=input.value;
+				input.value="";
+
+
+			btn.onclick=function(){
+				sec.value=input.value;
+				input.value="";
+
+				btn.onclick=function(){
+				thi.value=input.value;
+				input.value="";
+
+			}
+			}
+			}
+
+		
+	
 
 	DeFir.onclick=function(){
 		document.getElementById("fir").value="";

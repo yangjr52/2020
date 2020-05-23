@@ -23,7 +23,7 @@ window.onload=function(){
 				sec.value=input.value;
 				input.value="";
 
-				btn.onclick=function(){
+			btn.onclick=function(){
 				thi.value=input.value;
 				input.value="";
 

@@ -1,18 +1,62 @@
 *{
-	padding: 5px;
-	margin: 5px;
+	padding: 0px;
+	margin: 0px;
 }
 
 .all{
-	height: 500px;
-	width: 800px;
-	border-style: solid;
-	border-right-color: black;
+	height: 700px;
+	width: 1198.4px;
 }
 
 .menu-1{
-	background:#afaaae;
-	width: 200px;
-	height: 460px;
-	z-index: 1;
+	background:#ece5f7;
+	width: 30%;
+	height: 100%;
+	float: left;
+	box-shadow: 0 0 0 4px #acacac;
 }
+.part-0{
+	width: 95%;
+	height: 10%;
+	font-size: 30px;
+	background-color: #acacac;
+	padding: 10px 10px;
+	text-align: center;
+	line-height: 70px;
+	display: block;
+}
+.part-1{
+	width: 90%;
+	height: 10%;
+	font-size: 30px;
+	padding: 5px 10px;
+	position: relative;
+	top: 30px;
+	left: 15px;
+	display: block;
+	border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+.part-2{
+	width: 90%;
+	height: 10%;
+	font-size: 30px;
+	padding: 10px 10px;
+	position: relative;
+	top: 60px;
+	left: 15px;
+	display: block;
+	border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.login{
+	width: 90%;
+	height: 10%;
+	font-size: 30px;
+	padding: 10px 10px;
+	position: relative;
+	top: 90px;
+	left: 15px;
+	display: block;
+	border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+

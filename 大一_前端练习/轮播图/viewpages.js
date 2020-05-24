@@ -34,3 +34,4 @@ function changeImg(){
 }
 
 slideImg();
+banner.onmouseout();

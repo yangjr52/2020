@@ -21,6 +21,9 @@ blog.onclick=function(){
 	title3.innerHTML='优秀案例';
 	blog.classList.add("active");
 	video.classList.remove("active");
+	title1.classList.add("active2");
+	title2.classList.remove("active2");
+	title3.classList.remove("active2");
 }
 
 video.onclick=function(){
@@ -30,6 +33,9 @@ video.onclick=function(){
 	title3.innerHTML='视频投稿';
 	video.classList.add("active");
 	blog.classList.remove("active");
+	title1.classList.add("active2");
+	title2.classList.remove("active2");
+	title3.classList.remove("active2");
 }
 
 title1.onclick=function(){

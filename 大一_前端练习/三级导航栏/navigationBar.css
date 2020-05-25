@@ -12,15 +12,15 @@
 
 .menu-1{
 	background:#e4e1ec;
-	width: 25%;
-	height: 100%;
+	width: 260px;
+	height: 700px;
 	float: left;
 	box-shadow: 0 0 0 4px #acacac;
 	display: inline-block;
 }
 .main{
-	width: 94%;
-	height: 10%;
+	width: 240px;
+	height: 70px;
 	font-size: 30px;
 	background-color: #acacac;
 	padding: 10px 10px;
@@ -29,8 +29,8 @@
 	display: block;
 }
 .blog{
-	width: 90%;
-	height: 10%;
+	width: 200px;
+	height: 70px;
 	font-size: 30px;
 	padding: 5px 10px;
 	position: relative;
@@ -41,8 +41,8 @@
 
 }
 .video{
-	width: 90%;
-	height: 10%;
+	width: 200px;
+	height: 70px;
 	font-size: 30px;
 	padding: 10px 10px;
 	position: relative;
@@ -53,9 +53,9 @@
 }
 
 .login{
-	width: 90%;
-	height: 10%;
-	font-size: 30px;
+	width: 200px;
+	height: 70px;
+	font-size: 26px;
 	padding: 10px 10px;
 	position: relative;
 	top: 90px;
@@ -66,8 +66,8 @@
 
 
 .menu-2{
-	width: 75%;
-	height: 100%;
+	width: 850px;
+	height: 720px;
 	display: inline-block;
 	position: relative;
 }
@@ -76,8 +76,8 @@
 .title{
 	display: block;
 	background-color: #9778d5;
-	width: 100%;
-	height: 10%;
+	width: 850px;
+	height: 90px;
 	position: relative;
 	left: 8px;
 	box-shadow: 4px 4px 0 0px #acacac;
@@ -87,16 +87,13 @@
 	color: white;
 	font-size: 40px;
 	text-align: center;
-	line-height: 60px;
+	line-height: 90px;
 	position: relative;
 	left: -150px;
 }
 
 .s-title{
 	display:inline-block;
-	position: relative;
-	left: 20px;
-	top: 70px;
 	width: 200px;
 	height: 70px;
 	background-color: #c8ccef; 
@@ -125,13 +122,13 @@
 }
 
 .menu-3{
-	width:860px;
-	height: 500px;
+	width:830px;
+	height: 480px;
 	background-color: #ede6f8;
 	display: inline-block;
 	position: relative;
 	top: -510px;
-	left: -10px;
+	left: -85px;
 	float: right;
 	box-shadow: 4px 4px 0 0px #acacac;
 }
@@ -144,3 +141,28 @@
 	box-shadow: 5px 5px #acacac inset;
 	background-color: #b9bee6;
 }
+
+.hot{
+	width: 300px;
+	height: 50px;
+	background-image: linear-gradient(to right,#5215d5, #751ae4);
+	font-size: 30px;
+	text-align: center;
+	border-bottom-right-radius: 10%;
+	color: white;
+	line-height: 50px;
+	display: inline-block;
+	float:left; 
+}
+
+.tip{
+	width: 400px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #caabff;
+	display: inline-block;
+	float:left; 
+	border-bottom-right-radius: 10%;
+	box-shadow: 2px 2px 0 0px #acacac;
+}
+

@@ -122,7 +122,7 @@
 }
 
 .menu-3{
-	width:830px;
+	width:840px;
 	height: 480px;
 	background-color: #ede6f8;
 	display: inline-block;
@@ -140,6 +140,10 @@
 .active2{
 	box-shadow: 5px 5px #acacac inset;
 	background-color: #b9bee6;
+}
+
+.content{
+	height: 500px;
 }
 
 .hot{
@@ -166,3 +170,86 @@
 	box-shadow: 2px 2px 0 0px #acacac;
 }
 
+.top1{
+	width: 280px;
+	height: 400px;
+	position: relative;
+	top:60px;
+	left:-700px;
+	z-index: 1;
+	display: inline-block;
+	float: left;
+}
+
+.top11{
+	width: 125px;
+	height: 150px;
+	position: relative;
+	left: 77.5px;
+} 
+
+.top2{
+	width: 280px;
+	height: 400px;
+	position: relative;
+	top:-340px;
+	left: 280px;
+	z-index: 1;
+	display: inline-block;
+	float: left;
+}
+
+.top12{
+	width: 125px;
+	height: 150px;
+	position: relative;
+	left: 77.5px;
+} 
+
+.top3{
+	width: 280px;
+	height: 400px;
+	position: relative;
+	top:-340px;
+	left: 280px;
+	z-index: 1;
+	display: inline-block;
+	float: left;
+}
+
+.top13{
+	width: 125px;
+	height: 150px;
+	position: relative;
+	left: 77.5px;
+} 
+
+.name{
+	width: 300px;
+	height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	z-index: 999;
+	position: relative;
+	left: -10px;
+}
+
+.red{
+	color: red;
+}
+
+.intro{
+	width: 250px;
+	height: 200px;
+	position: relative;
+	left: 20px;
+}
+
+.block{
+	display: block;
+}
+
+.none{
+	display:none;
+}

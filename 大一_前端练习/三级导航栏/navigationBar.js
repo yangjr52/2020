@@ -13,13 +13,15 @@ var login=byId("login"),
 	len=content.length,
 	box1=byId("box1"),
 	box2=byId("box2"),
-	box3=byId("box3");
+	box3=byId("box3"),
+	i=0;
 
 login.onclick=function(){
 	var name=prompt("用户名：");
 	login.innerHTML='用户：'+name;
 }
 
+if(i==0){
 	title1.onclick=function(){
 		title1.classList.add("active2");
 		title2.classList.remove("active2");
@@ -58,6 +60,11 @@ login.onclick=function(){
 		box2.classList.add("none");
 		box2.classList.remove("block");
 	}
+}
+else {
+	
+}
+
 
 
 video.onclick=function(){
@@ -70,6 +77,13 @@ video.onclick=function(){
 	title1.classList.add("active2");
 	title2.classList.remove("active2");
 	title3.classList.remove("active2");
+
+		box1.classList.add("none");
+		box1.classList.remove("block");
+		box2.classList.add("none");
+		box2.classList.remove("block");
+		box3.classList.add("none");
+		box3.classList.remove("block");
 }
 
 blog.onclick=function(){
@@ -84,12 +98,14 @@ blog.onclick=function(){
 	title2.classList.remove("active2");
 	title3.classList.remove("active2");
 
-	box1.classList.remove("none");
+		box1.classList.remove("none");
 		box1.classList.add("block");
 		box2.classList.add("none");
 		box2.classList.remove("block");
 		box3.classList.add("none");
 		box3.classList.remove("block");
+
+		i=1000;
 }
 
 

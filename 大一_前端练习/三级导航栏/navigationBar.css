@@ -253,3 +253,93 @@
 .none{
 	display:none;
 }
+
+/*1-2*/
+.left{
+	height: 480px;
+	width: 405px;
+	border-right: 13px dotted #f6c346;
+	display: inline-block;
+}
+
+.right{
+	height: 480px;
+	width: 435px;
+	float: right;
+	display: inline-block;
+	position: relative;
+	left: -310px;
+}
+
+.backBox{
+	height: 160px;
+	width: 310px;
+	float: left;
+	background-image: linear-gradient(to right, #7047ac , #8b6ecb);
+	display: inline-block;
+	border-radius: 10%;
+	margin: 20px;
+	padding: 15px;
+	color: white;
+	font-weight: bold;
+	font-size: 65px;
+}
+
+.small{
+	font-size: 40px;
+}
+
+.plog{
+	width: 400px;
+	height: 400px;
+	display: inline-block;
+}
+
+.interview{
+	width: 300px;
+	height: 85px;
+	background-color: #9778d5;
+	font-size:20px;
+	position: relative;
+	left: 100px;
+	top: -90px;
+	color: white;
+}
+
+.wb1{
+	position: relative;
+	top: -90px;
+}
+
+.vlog{
+	width: 430px;
+	height: 430px;
+	position: relative;
+	top: 0px;
+	display: inline-block;
+}
+
+.ph1{
+	position: relative;
+	top: 370px;
+	left: 320px;
+	z-index: 9;
+}
+
+.interview2{
+	width: 300px;
+	height: 85px;
+	background-color: #9778d5;
+	font-size:20px;
+	position: relative;
+	left: 20px;
+	top: 273px;
+	color: white;
+	z-index: 9;
+}
+
+.wb2{
+	position: relative;
+	top: -170px;
+	left: 20px;
+}

@@ -1,8 +1,7 @@
 *{
 	padding: 0px;
 	margin: 0px;
-	height: 700px;
-	width: 1198.4px;
+
 }
 
 .all{
@@ -88,8 +87,6 @@
 	font-size: 40px;
 	text-align: center;
 	line-height: 90px;
-	position: relative;
-	left: -150px;
 }
 
 .s-title{
@@ -143,7 +140,7 @@
 }
 
 .content{
-	height: 500px;
+	height: 400px;
 }
 
 .hot{
@@ -174,8 +171,8 @@
 	width: 280px;
 	height: 400px;
 	position: relative;
-	top:60px;
-	left:-700px;
+	top:40px;
+	left:-300px;
 	z-index: 1;
 	display: inline-block;
 	float: left;
@@ -192,7 +189,7 @@
 	width: 280px;
 	height: 400px;
 	position: relative;
-	top:-340px;
+	top:-360px;
 	left: 280px;
 	z-index: 1;
 	display: inline-block;
@@ -210,7 +207,7 @@
 	width: 280px;
 	height: 400px;
 	position: relative;
-	top:-340px;
+	top:-360px;
 	left: 280px;
 	z-index: 1;
 	display: inline-block;
@@ -247,7 +244,7 @@
 }
 
 .block{
-	display: block;
+	display: block-inline;
 }
 
 .none{
@@ -268,7 +265,7 @@
 	float: right;
 	display: inline-block;
 	position: relative;
-	left: -310px;
+	top: -485px;
 }
 
 .backBox{
@@ -314,8 +311,6 @@
 .vlog{
 	width: 430px;
 	height: 430px;
-	position: relative;
-	top: 0px;
 	display: inline-block;
 }
 
@@ -342,4 +337,87 @@
 	position: relative;
 	top: -170px;
 	left: 20px;
+}
+
+
+.banner{
+	width:370px;
+	height:400px;
+	overflow:hidden;
+	position:relative;
+	top: -450px;
+	left: 240px;
+}
+
+.slide{
+	width:370px;
+	height:400px;
+	z-index: 9;
+	display:none;
+	border-radius: 5%;
+	z-index: 99;
+}
+
+.background{
+	width: 840px;
+	height: 480px;
+}
+
+.button{
+    position: absolute;
+    transform:rotate(180deg);
+    top: 50%;
+    left: 10px;
+    height: 40px;
+    width: 20px;
+    margin-top:-40px;
+    z-index: 99;
+}
+
+.button:hover{
+	background-color: #333;
+	opacity: 0.5;
+	filter: alpha(opacity=50); 
+}
+
+.next{
+	position: relative;
+	top: -650px;
+	left: 810px;
+	transform: rotate(0deg);
+}
+
+.prev{
+	transform: rotate(180deg);  /*水平翻转180度*/
+}
+
+.pic5{
+	height: 480px;
+	width: 840px;
+}
+
+.box6{
+	position: relative;
+	top: 20px;
+	left: 250px;
+	font-size: 20px;
+
+}
+
+.user{
+	font-size: 20px;
+}
+
+button{
+	position: relative;
+	top: 20px;
+	left: -280px;
+	height: 40px;
+	width: 100px;
+	background-color: #c8ccef; 
+}
+
+#box6{
+	margin: 10px;
+	padding: 20px;
 }

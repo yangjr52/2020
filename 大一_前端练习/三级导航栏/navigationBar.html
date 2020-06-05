@@ -6,25 +6,36 @@
 	<link rel="stylesheet" type="text/css" href="navigationBar.css">
 </head>
 <body>
-
+<form id="form" name="form">
 	<div class="all" id="all">
 		<div class="menu-1" id="menu-1">
 			<div class="main">主页</div>
-			<div class="blog active" id="blog">博客首页 ></div>
-			<div class="video" id="video">视频教程 ></div>
-			<div class="login" id="login">用户登录/注册 ></div>
+			<a href="#"><div class="blog active" id="blog">博客首页 ></div></a>
+			<a href="#"><div class="video" id="video">视频教程 ></div></a>
+			<a href="#"><div class="log2 none" id="log2">用户：</div></a>
+			
+
+					<div class="log" id="log">
+						<b><p id="loging" style="font-size:20px;">账号登录</p></b>
+						 <span id="account">账号：</span><input type="text" name="log" id="name"><br/>
+						 <span id="number">密码：</span><input type="text" name="key" id="key">
+						<input type="button" name="submit" class="submit" value="登录" id="submit">
+						<p class="logon" id="logon"><a href="#">没有账号？立即注册</a></p>
+					</div>
+
+
 		</div>
 
 		<div class="menu-2" id="menu-2">
 			<div class="title" id="title"><p class="p" id="p">博客首页</p></div>
-			<div class="s-title title1 active2" id="title1">热门推荐</div>
-			<div class="s-title title2" id="title2">博客分类</div>
-			<div class="s-title title3" id="title3">优秀案例</div>
+			<a href="#"><div class="s-title title1 active2" id="title1">热门推荐</div></a>
+			<a href="#"><div class="s-title title2" id="title2">博客分类</div></a>
+			<a href="#"><div class="s-title title3" id="title3">优秀案例</div></a>
 		</div>
 			
 
 		<div class="menu-3" id="menu-3">
-			<div class="content none" id="box1">
+			<div class="content block" id="box1">
 				<div class="plog">
 					<a href="https://weibo.com/u/3412668714">
 					<img src="./img/bloger1.jpg" style="width:100px; height:100px;"/>
@@ -105,7 +116,7 @@
 				</div>
 			</div>
 
-			<div class="content block" id="box4">
+			<div class="content none" id="box4">
 				<img src="./img/b.jpg" class="background">
 				<div class="banner" id="banner">
 					<img src="./img/v1.png" class="slide">
@@ -170,17 +181,17 @@
 				</table>
 
 				<div align="center">
-					<button onclick="test(document.getElementById('in').value)">提交</button>
+					<button onclick="test(document.getElementById('in').value)" >提交</button>
 				</div>
 				</form>
 			</div>
 
 				</div>
 
-
 		</div>
-	</div>
 
+	</div>
+</form>
 </body>
 	<script type="text/javascript" src="navigationBar.js"></script>
 </html>

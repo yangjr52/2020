@@ -3,10 +3,16 @@ function byId(id){
 }
 
 var login=byId("login"),
+	log=byId("log"),
+	log2=byId("log2"),
 	blog=byId("blog"),
 	p=byId("p"),
 	all=byId("all"),
 	banner=byId("banner"),
+	logon=byId("logon"),
+	loging=byId("loging"),
+	submit=byId("submit"),
+	name=byId("name"),
 
 	title1=byId("title1"),
 	title2=byId("title2"),
@@ -17,6 +23,9 @@ var login=byId("login"),
 	box1=byId("box1"),
 	box2=byId("box2"),
 	box3=byId("box3"),
+	box4=byId("box4"),
+	box5=byId("box5"),
+	box6=byId("box6"),
 	box=all.getElementsByClassName("content"),
 	lenB=box.length,
 
@@ -26,58 +35,106 @@ var login=byId("login"),
 	next=byId("next"),
 	lenP=pics.length;
 
-login.onclick=function(){
-	var name=prompt("用户名：");
-	login.innerHTML='用户：'+name;
-}
-
 	title1.onclick=function(){
+		if (p.innerHTML=='博客首页') {
+						for(var i=0;i<lenT;i++){
+						title[i].classList.remove("active2");
+					}
+					
+					title1.classList.add("active2");
 
-		for(var i=0;i<lenT;i++){
-			title[i].classList.remove("active2");
+					for(var j=0;j<lenB;j++){
+						box[j].classList.add("none");
+						box[j].classList.remove("block");
+					}
+
+					box1.classList.remove("none");
+					box1.classList.add("block");
 		}
-		
-		title1.classList.add("active2");
 
-		for(var j=0;j<lenB;j++){
-			box[j].classList.add("none");
-			box[j].classList.remove("block");
+		if (p.innerHTML=='视频教程') {
+			for(var i=0;i<lenT;i++){
+						title[i].classList.remove("active2");
+					}
+					
+					title1.classList.add("active2");
+
+					for(var j=0;j<lenB;j++){
+						box[j].classList.add("none");
+						box[j].classList.remove("block");
+					}
+
+					box4.classList.remove("none");
+					box4.classList.add("block");
 		}
-
-		box1.classList.remove("none");
-		box1.classList.add("block");
 	}
 
 	title2.onclick=function(){
-		for(var i=0;i<lenT;i++){
-			title[i].classList.remove("active2");
-		}
-		
-		title2.classList.add("active2");
+					if (p.innerHTML=='博客首页') {
+						for(var i=0;i<lenT;i++){
+						title[i].classList.remove("active2");
+					}
+					
+					title2.classList.add("active2");
 
-		for(var j=0;j<lenB;j++){
-			box[j].classList.add("none");
-			box[j].classList.remove("block");
+					for(var j=0;j<lenB;j++){
+						box[j].classList.add("none");
+						box[j].classList.remove("block");
+					}
+
+					box2.classList.remove("none");
+					box2.classList.add("block");
 		}
 
-		box2.classList.remove("none");
-		box2.classList.add("block");
+		if (p.innerHTML=='视频教程') {
+			for(var i=0;i<lenT;i++){
+						title[i].classList.remove("active2");
+					}
+					
+					title2.classList.add("active2");
+
+					for(var j=0;j<lenB;j++){
+						box[j].classList.add("none");
+						box[j].classList.remove("block");
+					}
+
+					box5.classList.remove("none");
+					box5.classList.add("block");
+		}
 	}
 
 	title3.onclick=function(){
-		for(var i=0;i<lenT;i++){
-			title[i].classList.remove("active2");
-		}
-		
-		title3.classList.add("active2");
+		if (p.innerHTML=='博客首页') {
+							for(var i=0;i<lenT;i++){
+							title[i].classList.remove("active2");
+						}
+						
+						title3.classList.add("active2");
 
-		for(var j=0;j<lenB;j++){
-			box[j].classList.add("none");
-			box[j].classList.remove("block");
+						for(var j=0;j<lenB;j++){
+							box[j].classList.add("none");
+							box[j].classList.remove("block");
+						}
+
+						box3.classList.remove("none");
+						box3.classList.add("block");
 		}
 
-		box3.classList.remove("none");
-		box3.classList.add("block");
+		if (p.innerHTML=='视频教程') {
+			for(var i=0;i<lenT;i++){
+						title[i].classList.remove("active2");
+					}
+					
+					title3.classList.add("active2");
+
+					for(var j=0;j<lenB;j++){
+						box[j].classList.add("none");
+						box[j].classList.remove("block");
+					}
+
+					box6.classList.remove("none");
+					box6.classList.add("block");
+		}
 	}
 
 
@@ -185,3 +242,30 @@ function changeImg(){
 	pics[index].style.display='block';
 
 }
+
+
+logon.onclick=function(){
+	loging.innerHTML="账号注册:";
+	account.innerHTML="设置账号:";
+	number.innerHTML="设置密码:";
+	submit.value="注册";
+	logon.innerHTML=" ";
+}
+
+submit.onclick=function(){
+	log.style.display='none';
+	log2.classList.remove("none");
+	log2.classList.add("block");
+
+	var a = document.form.name.value;
+	log2.innerHTML="用户："+a;
+}
+
+
+
+
+
+
+
+
+

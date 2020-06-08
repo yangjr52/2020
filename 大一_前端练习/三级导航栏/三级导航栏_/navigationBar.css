@@ -258,7 +258,7 @@ a{
 /*1-2*/
 .left{
 	height: 480px;
-	width: 405px;
+	width: 390px;
 	border-right: 13px dotted #f6c346;
 	display: inline-block;
 }
@@ -269,7 +269,6 @@ a{
 	float: right;
 	display: inline-block;
 	position: relative;
-	top: -485px;
 }
 
 .backBox{

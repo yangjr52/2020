@@ -18,13 +18,59 @@ var aList=document.querySelectorAll('.nav-list h2'),
     aHide=document.querySelectorAll('.hide'),
     aIcon=document.querySelectorAll('.nav-list i');
 
+var lastIndex=0;//上一次点击的下标
+
 for(var i=0;i<aList.length;i++){
 	/*自定义事件*/
-	aList[i].index=i;
+	aList[i].index=i;/*增加了一个属性 用于保存i*/
 	aList[i].onclick=function(){
-		aHide[this.index].style.height='200px';
-		this.style.backgroundColor='#393c4a';
-		aIcon[this.index].style.transform='rotate(90deg)';
+		//清除上一次样式
+		aHide[lastIndex].style.height='0';
+		aList[lastIndex].className='';
+		aIcon[lastIndex].className='';
+
+		//设置当前样式
+		aHide[this.index].style.height='245px';
+		aList[this.index].className='on';
+		aIcon[this.index].className='on';
+		lastIndex=this.index; /*保存上一次的下标*/
 	}
 }
+
+
+/*点击当前 清除上一次样式 设置当前样式*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -15,7 +15,7 @@
 			width: 100%;
 			height: 60px;
 			background-color: #44495a;
-			font-size: 20px;
+			font-size: 25px;
 			color: #fff;
 			line-height: 60px; /*垂直居中*/
 			text-align: center;/*水平居中*/
@@ -34,7 +34,10 @@
 			background-color: #3889d4;
 			text-align: center;/*水平居中*/
 			color: #fff;
-			font-size: 15px;
+			font-size: 20px;
+		}
+		.nav-list h2.on{
+			background-color:#393c4a;
 		}
 		.nav-list i{
 			position: absolute;
@@ -46,6 +49,10 @@
 			transform-origin: 1px 7px;/*css3转动基点*/
 		}
 
+		.nav-list i.on{
+			transform: rotate(90deg);
+		}
+
 		.hide{
 			overflow: hidden;
 			height: 0;
@@ -53,9 +60,9 @@
 		}
 
 		.hide h5{
-			padding: 7px 0;
+			padding: 10px 0;
 			background-color: #282c3a;
 			text-align: center;
 			border-bottom: 1px solid #42495d; /*底部*/
 			color: #fff;
-		}		
+		}

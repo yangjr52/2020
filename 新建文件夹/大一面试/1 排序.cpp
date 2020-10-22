@@ -18,5 +18,5 @@ main()
 		y=z;
 		z=t;
 	}
-	printf("small to big is %d  %d  %d\n",x,y,z);
+	printf("%d %d %d\n",x,y,z);
 }

@@ -43,7 +43,8 @@ nav ul li {
 }
 
 nav ul li.liactive {
-    border-bottom: 2px solid #fff;
+    border-bottom: 1px solid #fff;/*?*/
+    background-color: #fff;
     z-index: 9;
 }
 

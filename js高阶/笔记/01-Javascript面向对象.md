@@ -24,7 +24,8 @@
 
 **对象**特指某一个，通过实例化一个具体的对象。
 
-### 4.创建类
+## 4.创建类
+
 **语法：**
 ```javascript
 class name {
@@ -256,5 +257,3 @@ class Son extends Father{  //子类
      </script>
    ```
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a0b3034da4e74cee865bcdf416c11606~tplv-k3u1fbpfcp-watermark.image)
-
-截止10.三个注意点

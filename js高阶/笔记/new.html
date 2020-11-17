@@ -6,33 +6,29 @@
     <title>点我</title>
 </head>
 <body>
-    <div></div>
+    <button>点击</button>
+    <button>点击</button>
+    <button>点击</button>
     <script>
-        var obj = {
-            id: 1,
-            pname: '小米',
-            price: 1999,
-        };
-        Object.defineProperty(obj, 'num', {
-            value:1000
-        });
-        console.log(obj);       // {id: 1, pname: "小米", price: 1999, num: 1000}
-        Object.defineProperty(obj, 'price', {
-            value:99        // {id: 1, pname: "小米", price: 99, num: 1000}
-        });
-        console.log(obj);
-        Object.defineProperty(obj, 'id', {
-            writable: false,       // false 不允许修改属性值
-        });
-        obj.id = 2;
-        console.log(obj);       // {id: 1, pname: "小米", price: 99, num: 1000}
-        Object.defineProperty(obj, 'address', {
-            value: '中国山东蓝翔技校xx单元',
-            // 存在这个值但是你是看不见的 隐私！
-            enumerable: false,      // enumerable 如果值为false 则不允许遍历, 默认的值是 false
-            
-            configurable: false     // configurable 如果为false 则不允许删除这个属性 不允许在修改第三个参数里面的特性 默认为false
-        });
+        // 有一个按钮,当我们点击了之后,就禁用这个按钮,3秒钟之后开启这个按钮
+/*      var btn = document.querySelector('button');
+        btn.onclick = function() {
+            this.disabled = true;
+            setTimeout(function() {
+            this.disabled = false;
+        }.bind(this), 1000)
+        } */
+
+        var btn = document.querySelectorAll('button');
+        for(var i = 0; i < btn.length; i++) {
+            btn[i].onclick = function() {
+                this.disabled = true;
+                setTimeout(function() {
+                this.disabled = false;
+                }.bind(this), 1000)
+            }
+        }
+        
     </script>
 </body>
 </html>

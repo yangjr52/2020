@@ -106,9 +106,9 @@ body{
 }
 .con{		
  	width: 331px;
- 	position:fixed;
- 	top: 92%;
- 	left:0px;
+ 	position: absolute;
+ 	top: 620px;
+ 	left: 0px;
 	background-color: white;
 	font-size: 12px;
 }

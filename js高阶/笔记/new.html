@@ -15,30 +15,7 @@
     </style>
 <body>
     <div></div>
-    
-    <script type="text/javascript" src="/Scripts/jquery-1.10.2.js">
-
-        var get_f2 = function () {
-            $.ajax({
-                type: "get",
-                url: "/api/text",
-                data: { strQuery: JSON.stringify({ id: "1", name: "JIM", Creatime: "2017-9-10" }) },
-                contentType: "application/json",
-                success: function (data, status) {
-                    if (status == "success") {
-                        $("#text").html(data);
-                    }
-                }
-    
-            })
-    
-    
-        }
-        $("sss").click(function () {
-            get_f2();
-        })
-    
-    </script>
+    <script type="text/javascript" src="D:\resourse\jquery-3.5.1.min.js"></script>
     
     <script>
         // 作为参数传递
@@ -52,7 +29,9 @@
         });
         $("div").animate({left: 500}, function() {
             $("div").css("backgroundColor", "purple");
-        })
+            
+        });
+        
     </script>
     
 </body>

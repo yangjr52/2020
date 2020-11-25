@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="nav">
+        <li>榴莲</li>
+        <li>臭豆腐</li>
+        <li>鲱鱼罐头</li>
+        <li>大猪蹄子</li>
+    </ul>
+    <script>
+        // 1. 动态添加属性
+        var lis = document.querySelector('.nav').querySelectorAll('li');
+        for(i = 0; i < lis.length; i++){
+            lis[i].index = i;   // 动态添加属性
+            lis[i].onclick = function() {
+                console.log(this.index);
+            }
+        }
+
+        // 2. 利用闭包的方式得到 **li** 的索引号
+        for(i = 0; i < lis.length; i++){
+            // 利用 for循环创建了四个立即执行函数
+            (function(i) {  //必须是通过下面那个括号传递进来的
+                // console.log(i);
+                lis[i].onclick = function() {
+                    console.log(i); // 这个里面的 i是另一个函数里面的内容 在此处产生了闭包 bingo！！
+                }
+            }(i));
+        }
+    </script>
+</body>
+</html>

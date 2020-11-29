@@ -12,26 +12,30 @@
         <li>鲱鱼罐头</li>
         <li>大猪蹄子</li>
     </ul>
-    <script>
-        // 1. 动态添加属性
-        var lis = document.querySelector('.nav').querySelectorAll('li');
-        for(i = 0; i < lis.length; i++){
-            lis[i].index = i;   // 动态添加属性
-            lis[i].onclick = function() {
-                console.log(this.index);
+    <script> 
+        var car = (function() {
+            var start = 13;
+            var total = 0;
+            return{
+                price: function(n) {
+                    if(n <= 3){
+                        total = start;
+                    }
+                    else{
+                        total = start + (n - 3)*5;
+                    }
+                    return total;   // 一定要加return返回哦！！
+                },   // 正常
+                yd: function(flag) {    // 拥堵
+                    return flag ? total + 10 : total;   // 拥堵了吗？真的 total+10 : 假的 total
+                }   
             }
-        }
+        })();
+        console.log(car.price(5)); // 23
+        console.log(car.yd(true)); // 33
 
-        // 2. 利用闭包的方式得到 **li** 的索引号
-        for(i = 0; i < lis.length; i++){
-            // 利用 for循环创建了四个立即执行函数
-            (function(i) {  //必须是通过下面那个括号传递进来的
-                // console.log(i);
-                lis[i].onclick = function() {
-                    console.log(i); // 这个里面的 i是另一个函数里面的内容 在此处产生了闭包 bingo！！
-                }
-            }(i));
-        }
+        console.log(car.price(1)); // 13
+        console.log(car.yd(false)); // 13
     </script>
 </body>
 </html>

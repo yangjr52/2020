@@ -6,36 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <ul class="nav">
-        <li>榴莲</li>
-        <li>臭豆腐</li>
-        <li>鲱鱼罐头</li>
-        <li>大猪蹄子</li>
-    </ul>
+    <div></div>
+    <script type="text/javascript" src="D:/resourse/jquery-3.5.1.min.js"></script>
     <script> 
-        var car = (function() {
-            var start = 13;
-            var total = 0;
-            return{
-                price: function(n) {
-                    if(n <= 3){
-                        total = start;
-                    }
-                    else{
-                        total = start + (n - 3)*5;
-                    }
-                    return total;   // 一定要加return返回哦！！
-                },   // 正常
-                yd: function(flag) {    // 拥堵
-                    return flag ? total + 10 : total;   // 拥堵了吗？真的 total+10 : 假的 total
-                }   
-            }
-        })();
-        console.log(car.price(5)); // 23
-        console.log(car.yd(true)); // 33
+                function fn(a, b, callback) {
+            console.log(a + b);
+            callback && callback();
+        }
+        fn(1, 2, function() {
+            console.log('我是最后调用的');
+        });
 
-        console.log(car.price(1)); // 13
-        console.log(car.yd(false)); // 13
+        $("div").animate({
+            left: 500
+        }, function() {
+            $("div").css("backgroundColor", "purple");
+        })
     </script>
 </body>
 </html>
